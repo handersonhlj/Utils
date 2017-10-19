@@ -32,11 +32,9 @@ public class FileLog {
     }
 
     private static boolean save(File dic, @NonNull String fileName, String msg) {
-
-        File file = new File(dic, fileName);
-
+//        File file = new File(dic, fileName);
         try {
-            OutputStream outputStream = new FileOutputStream(file,true);
+            OutputStream outputStream = new FileOutputStream(dic.getPath()+fileName,true);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream, "UTF-8");
             outputStreamWriter.write(msg);
             outputStreamWriter.flush();

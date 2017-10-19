@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        KLog.file("MainActivity", Environment.getExternalStorageDirectory(), "/bdxh/Normal.txt","123");
+        KLog.file("MainActivity", Environment.getExternalStorageDirectory(), "/bdxh/Normal.txt","123\r\n");
     }
 
     public void logWithMsg(View view) {
-         KLog.file("MainActivity", Environment.getExternalStorageDirectory(), "/bdxh/Normal.txt","123");
+         KLog.file("MainActivity", Environment.getExternalStorageDirectory(), "/bdxh/Normal.txt","123\r\n");
     }
 }
