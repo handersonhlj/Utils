@@ -36,7 +36,7 @@ public class FileLog {
         File file = new File(dic, fileName);
 
         try {
-            OutputStream outputStream = new FileOutputStream(file);
+            OutputStream outputStream = new FileOutputStream(file,true);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream, "UTF-8");
             outputStreamWriter.write(msg);
             outputStreamWriter.flush();
